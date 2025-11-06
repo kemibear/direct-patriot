@@ -14,7 +14,28 @@ body {
     line-height: 1.6;
 }
 
+.bg-img{
+    /* full-viewport background behind all content */
+    position: fixed;
+    inset: 0; /* top:0; right:0; bottom:0; left:0; */
+    z-index: 0;
+    background-image: url('Background IMG/alexander-mils-lCPhGxs7pww-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* optional soft overlay (change rgba to taste) */
+}
+.bg-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0.35); /* light fade so cards remain readable */
+    pointer-events: none;
+}
+
 .screen {
+    position: relative;
+    z-index: 1;
     display: none;
     min-height: 100vh;
 }
@@ -42,9 +63,17 @@ body {
 .logo {
     font-size: 2.2rem;
     font-weight: 700;
+    color: var(--light-milky);
+    margin-bottom: 1rem;
+}
+
+.logo2{
+    font-size: 2.2rem;
+    font-weight: 700;
     color: var(--navy);
     margin-bottom: 1rem;
 }
+
 .login-container h2 {
     margin-bottom: 1.5rem;
     color: #16213e;
@@ -211,4 +240,10 @@ body {
 @media (max-width: 600px) {
     .profile-card { flex-direction: column; text-align: center; }
     #profile-img { width: 80px; height: 80px; }
+}
+
+/* ensure screens sit above the bg image */
+.app {
+    position: relative;
+    z-index: 1;
 }
