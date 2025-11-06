@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const initialBalance = 488111.80;
     let defaultUser = {
-        username: 'wessel',
-        password: 'patriot123',
+        username: 'reachwesselbeckenbauer@outlook.com',
+        password: 'patriot111',
         name: 'Wessel Beckenbauer',
         account: 'XXXX-XXXX-9382'
     };
@@ -29,6 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         { date: '2025-10-02', desc: 'Dinner & Tax - Wren & Wolf', amount: -123.89, type: 'debit' },
         { date: '2025-10-04', desc: 'Travel Supplies - Trader Joe’s', amount: -2300.80, type: 'debit' }
     ];
+
+    //Run below line to clear local storage transactions
+    //localStorage.removeItem('transactions');
 
     let balance = parseFloat(localStorage.getItem('balance')) || initialBalance;
     let transactions = JSON.parse(localStorage.getItem('transactions')) || [...initialTransactions];
