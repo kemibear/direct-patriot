@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const initialBalance = 488111.80;
     let defaultUser = {
-        username: 'reachwesselbeckenbauer@outlook.com',
-        password: 'patriot111',
+        username: 'wesselbeckenbauer@outlook.com',
+        password: 'patriot1011',
         name: 'Wessel Beckenbauer',
         account: 'XXXX-XXXX-9382'
     };
