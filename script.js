@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
             dashboardScreen.classList.add('active');
             loadDashboard();
         } else {
-            alert('Your account has been temporarily suspended. We detected a suspicious login and have restricted access for your security. To restore full access, please visit any branch with a valid photo ID, proof of address (such as a utility bill), and this security reference: [SEC-REF-000123]. Contact your account manager for assistance, and never share your passwords or OTPs with anyone.');
+            alert('Your account has been temporarily suspended. We detected a suspicious login and have restricted access for your security. To restore full access, please visit any branch with a valid photo ID, proof of address (such as a utility bill), and this security reference: [SEC-REF-285620]. For assistance, kidnly contact your account manager for assistance, and never share your passwords or OTPs with anyone.');
         }
     });
 
